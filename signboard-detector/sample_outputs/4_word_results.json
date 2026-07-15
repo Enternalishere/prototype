@@ -1,0 +1,18 @@
+{
+  "image": "4_word.JPG",
+  "piece_count": 1,
+  "pieces": [
+    {
+      "id": 1,
+      "bbox": [
+        33,
+        14,
+        1110,
+        327
+      ],
+      "width_in": 217.94,
+      "height_in": 64.2
+    }
+  ],
+  "yolo_label_file": null
+}

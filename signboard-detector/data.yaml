@@ -1,0 +1,4 @@
+train: ./yolo_dataset/images
+val: ./yolo_dataset/images
+nc: 1
+names: ['sign']
