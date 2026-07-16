@@ -84,7 +84,10 @@ def run_pipeline(
     stem = image_path.stem
     annotated_path = output_dir / f"{stem}_annotated.jpg"
     json_path = output_dir / f"{stem}_results.json"
-    label_path = output_dir / f"{stem}_yolo.txt"
+    # Ultralytics matches labels to images by filename stem, e.g. image.jpg
+    # requires labels/image.txt.  Keeping the same stem makes these exports
+    # immediately usable as a YOLO training dataset.
+    label_path = output_dir / f"{stem}.txt"
 
     draw_annotations(image, boxes, str(annotated_path))
     if export_yolo:

@@ -1,4 +1,5 @@
-train: ./yolo_dataset/images
-val: ./yolo_dataset/images
+path: .
+train: training_data/images
+val: training_data/images
 nc: 1
-names: ['sign']
+names: ['signboard_piece']
